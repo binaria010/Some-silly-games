@@ -398,7 +398,6 @@ def play_game(word_list):
             substitute = input('Would you like to substitute a letter? ')
             if substitute == 'yes':
                 replace -= 1
-                print(replace)
                 letter = input('Which letter would you like to replace: ')
                 new_hand = substitute_hand(hand, letter)
                 total_score_hand = play_hand(new_hand, word_list)
@@ -421,8 +420,7 @@ def play_game(word_list):
                 print('Total score for this hand: ', total_score_hand)
                 
         else : 
-            new_hand = substitute_hand(hand, letter)
-            total_score_hand = play_hand(new_hand, word_list)
+            total_score_hand = play_hand(hand, word_list)
             if replays>=0:
                 replay = input('Would you like to replay hand? ')
                 if replay == 'yes':
