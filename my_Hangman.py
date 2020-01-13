@@ -10,7 +10,7 @@ Let's play the Hangman game with the computer!
 import random
 import string
 
-WORDLIST_FILENAME = "words.txt"
+WORDLIST_FILENAME = "Hangman_words.txt"
 
 
 def load_words():
