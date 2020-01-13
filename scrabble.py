@@ -387,13 +387,13 @@ def play_game(word_list):
     replays = 0
     replace = 0
     Total_score = 0
-    hand = deal_hand(HAND_SIZE)
-    print('Current Hand:', end=' ')
-    display_hand(hand)
-
+    
 
     for h in range(n):
-        
+        hand = deal_hand(HAND_SIZE)
+        print('Current Hand:', end=' ')
+        display_hand(hand)
+
         if replace>=0:
             substitute = input('Would you like to substitute a letter? ')
             if substitute == 'yes':
